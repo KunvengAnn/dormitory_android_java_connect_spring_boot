@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mix_color_background"
+        android:padding="16dp">
+
+      <ImageView
+          android:id="@+id/logo_school"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="35dp"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/tvSystemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_school"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="TRƯỜNG ĐẠI HỌC KỸ THUẬT CÔNG NGHIỆP"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSystemTitle"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="HỆ THỐNG QUẢN LÝ KÝ TÚC XÁ"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSystemTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:backgroundTint="@color/blue_3"
+            android:gravity="center"
+            android:text="Đăng ký"
+            android:textColor="#000000"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue_3"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="#000000"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

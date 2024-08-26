@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray">#F8EDED</color>
+    <color name="blue_1">#1313A9</color>
+    <color name="blue_3">#4646E6</color>
+    <color name="yellow">#E6FF00</color>
+    <color name="green">#E99B26</color>
+    <color name="blue_2">#8e44ad</color>
+    <color name="orange_1">#FFC107</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textColor">#000000</color> <!-- Black -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- White -->
+
+    <color name="dropdown_background">#2196F3</color> <!-- Blue background -->
+    <color name="dropdown_text">#FFFFFF</color> <!-- White text -->
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!---->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <!--start app bar-->
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/id_AppBarLayoutCm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:background="@color/blue_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetEnd="0dp">
+
+                    <!---->
+                    <RelativeLayout
+                        android:id="@+id/HeaderRelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Trang chủ"
+                            android:textColor="@color/white"
+                            android:textSize="22dp"
+                            android:textStyle="bold|italic"
+                            tools:ignore="HardcodedText,SpUsage" />
+                    </RelativeLayout>
+                    <!--end-->
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+            <!--end of App Bar-->
+
+            <!---->
+            <RelativeLayout
+                android:id="@+id/id_relativeLayout_1"
+                android:layout_below="@+id/id_AppBarLayoutCm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp">
+
+                <ImageView
+                    android:id="@+id/id_ImgLogo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/logo"/>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/id_btnLogout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue_3"
+                    android:text="Đăng xuất"
+                    />
+
+                <TextView
+                    android:layout_toEndOf="@+id/id_ImgLogo"
+                    android:layout_below="@+id/id_btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:text="KTX Trường Đại học Kỹ thuật công nghiệp"/>
+            </RelativeLayout>
+
+            <!---->
+            <LinearLayout
+                android:id="@+id/id_linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_relativeLayout_1"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/undraw_pic_profile_re_7g2h"/>
+
+                <LinearLayout
+                    android:layout_marginStart="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="Sinh viên"/>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:textSize="20sp"
+                           android:text="Xin chào👋, "
+                           tools:ignore="HardcodedText" />
+                       <TextView
+                           android:id="@+id/id_username"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:textSize="20sp"
+                           android:text=""/>
+                   </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--here image-->
+            <ImageView
+                android:id="@+id/id_img_dormitory"
+                android:layout_below="@+id/id_linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/img_dormitory"/>
+
+            <!--all btn-->
+            <LinearLayout
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_below="@id/id_img_dormitory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/id_btnRegisterRoom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Đăng ký phòng"
+                        android:padding="20sp"
+                        />
+                    <!--a bit space-->
+                    <View
+                        android:layout_width="5sp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/BtnPayment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Thành toán"
+                        android:padding="20sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/BtnRoomChange"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Chuyển phòng"
+                        android:padding="20sp"
+                        />
+                    <!--a bit space-->
+                    <View
+                        android:layout_width="5sp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/BtnView_cost"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:padding="20sp"
+                        android:text="Xem chi phí"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/BtnRepairRoom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Sửa chữa"
+                        android:padding="20sp"
+                        />
+                    <!--a bit space-->
+                    <View
+                        android:layout_width="5sp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/BtnCheckOutRoom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Trả phòng"
+                        android:padding="20sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/BtnNotifica"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Thông báo"
+                        android:padding="20sp"
+                        />
+                    <!--a bit space-->
+                    <View
+                        android:layout_width="5sp"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/idBtnSetting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_3"
+                        android:text="Cài đặt"
+                        android:padding="20sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

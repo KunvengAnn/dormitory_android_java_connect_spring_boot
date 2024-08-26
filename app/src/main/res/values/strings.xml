@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dormitory_UI</string>
+
+    <string-array name="gender_options">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </string-array>
+
+</resources>
